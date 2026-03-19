@@ -31,7 +31,7 @@ header{
 }
 
 p{
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 #sobre {
@@ -44,25 +44,50 @@ p{
 
 /* este h2 é o "contato" */
 h2 {
-    text-decoration: underline; 
+    
 }
 
 /* este h4 é "sobre" */
 h4 {
     border-radius: 15px;
     padding: 5px;
-    width: 5%;
-    background-color: rgb(191, 189, 189);
-    text-decoration: underline; 
+    width: 4%;
+    background-color: rgb(191, 189, 189); 
 }
 
 /* este h3 é "Projetos" */
 h3 {
     border-radius: 15px;
     padding: 5px;
-    width: 7%;
+    width: 6%;
     background-color: rgb(191, 189, 189);
-    text-decoration: underline; 
+}
+
+#btnProjeto {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#btnProjeto:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+#img1, #img2, #img3 {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+#img1:hover, #img2:hover, #img3:hover {
+    transform: scale(1.10);
 }
 
 footer {
@@ -93,11 +118,15 @@ footer {
         }
 
         h4 {
-            width: 9%;
+            width: 7%;
         }
 
         h3 {
-            width: 14%;
+            width: 12%;
             
+        }
+
+        #img1, #img2, #img3 {
+            width: 20%;
         }
     }
