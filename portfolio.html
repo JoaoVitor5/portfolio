@@ -3,45 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfólio - João V. A. Mengarda</title>
+    <!-- espaço utilizado para conectar o CSS ao HTML -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- espaço utilizado para css -->
-    <link rel="stylesheet" href="style.css">
 
+    <!-- Área de tìtulo inicial -->
     <header>
+     
         <h1> João Vitor Araujo Mengarda </h1>
+        <img src="imagens/foto.jpg" id="fotoperfil">
+
     </header>
 <main>  
+
      <h2>Início</h2>
         <p></p>
+
+        <!-- Área descritiva da pessoa -->
         <h4>Sobre</h4>
-        <p id="sobre"> Atualmente realiza Graduação em Engenharia da Computação em Centro Universitário ENIAC (campus Guarulhos). 
-            Possui proficiência em língua inglesa. Além disso, realizou cursos de aprimoramentos profissional nas áreas de tecnologia da informação e linguagens de computação.</p>
+        <p id="sobre"> Atualmente curso Engenharia da Computação no Centro Universitário ENIAC (campus Guarulhos),
+             com foco em desenvolvimento front-end e interesse em atuar futuramente na área de desenvolvimento de jogos.</p>
+
+        <p id="maissobre">Possuo conhecimentos em HTML, CSS, JavaScript e Linguagem C, além de experiência com ferramentas como GIMP, Inkscape e Construct2.
+             Também tenho proficiência em língua inglesa e venho realizando cursos de aprimoramento na área de tecnologia da informação.
+             Iniciei minha trajetória acadêmica em Engenharia Mecânica, passando pelas instituições UNG e São Judas,
+             onde cursei a área por dois anos. Durante esse período, percebi que minha afinidade estava voltada à tecnologia e à criação,
+              o que me motivou a migrar para a Engenharia da Computação, área na qual sigo atualmente em constante evolução.</p>
+
+        <button id="btnSobre">Ver mais sobre mim</button>
+
         <p></p>    
         <p></p>
-<p id="sobre2">Habilidades: Inglês (intermediário), InkScape, GIMP, Construct2, Linguagem C.</p>
 
+        <h5>Habilidades</h5>
+        <p> Inglês (intermediário), InkScape, GIMP, Construct2, HTML, CSS, JavaScript, Linguagem C.</p>
 
 <p></p>
 
+<!-- Área descritiva dos projetos -->
 <h3>Projetos</h3>
 <p>Projeto vencedor da semana projweek 2024.2 do Centro Universitário Eniac,
      o projeto teve o intuito de elaborar um game virtual para aprimorar o conhecimento e conscientização de jovens sobre o meio ambiente.</p>
 
     <button id="btnProjeto">Ver mais do Projeto</button>
-    <img id="img1" src="imgprojeto1.jpg" style="display: none; opacity: 0; transition: 1s;">
-    <img id="img2" src="imgprojeto2.jpg" style="display: none; opacity: 0; transition: 1s;">
-    <img id="img3" src="imgprojeto3.jpg" style="display: none; opacity: 0; transition: 1s;">
- 
-
+    <div id="galeria">
+    <img id="img1" src="imagens/imgprojeto1.jpg" style="display: none; opacity: 0; transition: 1s;">
+    <img id="img2" src="imagens/imgprojeto2.jpg" style="display: none; opacity: 0; transition: 1s;">
+    <img id="img3" src="imagens/imgprojeto3.jpg" style="display: none; opacity: 0; transition: 1s;">
+    <img id="img4" src="imagens/Projweek Eniac 2024.2.jpg" style="display: none; opacity: 0; transition: 1s;">
+    
+<!-- Área para o link do projeto -->
 <nav>
-    <a href="https://www.construct.net/en/free-online-games/queda-reciclavel-71392/play" target="_blank">  Link para acessar o projeto</a>
+    <a href="https://www.construct.net/en/free-online-games/queda-reciclavel-71392/play"
+     target="_blank"
+     class="btnLink">
+    Link de acesso ao projeto 🎮</a>
+    </div>
 </nav>
 </main>
+
 <p></p>
 
+<!-- Área descritiva para os contatos (cabeçalho) -->
 <footer>
 <h2>Contato</h2>
 <nav>

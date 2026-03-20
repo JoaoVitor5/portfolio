@@ -1,11 +1,15 @@
+/* essa '*' logo abaixo esta colocando TUDO com margin 1% */
 *{
-    margin: 1%;
-
+margin: 1%;
 }
 
+/* Este @import esta conectando ao 'fonts.googleapis' com o intuito de colocar outras tipografias para á página. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* este body incorpora o estilo de tudo que está envolvido no 'body' */
 body {
     background-color: gray;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 125% ;
     color: black;
 
@@ -20,50 +24,43 @@ main{
     flex: 1;
 
 }
+/* Este logo abaixo Incorpora tudo que está no header (titulo) */
+
 
 header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-family: 'Times New Roman', Times, serif;
     border-radius: 15px;
     padding: 1%;
-    width: 35%;
+    width: 36%;
     margin: 0 auto;
     text-align: center;
     background-color: rgb(191, 189, 189);
 }
 
-p{
-    margin-bottom: 5px;
+#fotoperfil {
+     width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
 }
 
+p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* este #sobre é o texto descritivo do sobre*/
 #sobre {
     text-align: justify ;
 }
 
-#sobre2 {
-    text-align: justify;
-}
-
-/* este h2 é o "contato" */
-h2 {
-    
-}
-
-/* este h4 é "sobre" */
-h4 {
-    border-radius: 15px;
-    padding: 5px;
-    width: 4%;
-    background-color: rgb(191, 189, 189); 
-}
-
-/* este h3 é "Projetos" */
-h3 {
-    border-radius: 15px;
-    padding: 5px;
-    width: 6%;
-    background-color: rgb(191, 189, 189);
-}
-
-#btnProjeto {
+#btnSobre {
+    font-family: 'Poppins', sans-serif;
     background-color: #333;
     color: white;
     border: none;
@@ -73,9 +70,93 @@ h3 {
     cursor: pointer;
     transition: 0.3s;
 }
+
+#btnSobre:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+#maissobre {
+    opacity: 0;
+    transition: 1s;
+    display: none;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+
+/* este h5 é o título "Habilidades" */
+h5 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 5px;
+    width: 7%;
+    background-color: rgb(191, 189, 189); 
+}
+
+/* este h2 é o título "contato" */
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 2%;
+    
+}
+
+
+/* este h4 é o título "sobre" */
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px;
+    padding: 5px;
+    width: 3.5%;
+    background-color: rgb(191, 189, 189); 
+}
+
+/* este h3 é o título "Projetos" */
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px;
+    padding: 5px;
+    width: 6%;
+    background-color: rgb(191, 189, 189);
+}
+
+/* Este btnProjeto é o botão que mostra as imagens do projeto. */
+#btnProjeto {
+    font-family: 'Poppins', sans-serif;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Este 'btnProjeto:hover' é para colocar o efeito de hover no botão. */
 #btnProjeto:hover {
     background-color: #555;
     transform: scale(1.05);
+}
+
+/* galerias e images controlam as imagens*/
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+#galeria img {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 20px;
 }
 
 #img1, #img2, #img3 {
@@ -86,8 +167,29 @@ h3 {
     border: 2px solid black;
     border-radius: 50px;
 }
-#img1:hover, #img2:hover, #img3:hover {
+#img1:hover, #img2:hover, #img3:hover, #img4:hover {
     transform: scale(1.10);
+}
+
+/* btnLink é o botão para acessar o projeto do jogo */
+.btnLink {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 10px;
+
+    background-color: rgb(42, 41, 41);
+    color: white;
+    text-decoration: none;
+
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btnLink:hover {
+    background-color:rgb(82, 82, 82) ;
+    transform: scale(1.05);
 }
 
 footer {
@@ -103,6 +205,7 @@ footer {
     margin-left: 27px;
 }
 
+/* d-autoral é o texto que fala de direitos autorais */
 #d-autoral{
     background-color: rgb(255, 255, 255);
     margin-right: 10px;
@@ -126,7 +229,16 @@ footer {
             
         }
 
+        h5 {
+            width: 15%;
+        }
+
         #img1, #img2, #img3 {
             width: 20%;
+        }
+
+        #e-mail {
+            margin-left: 2% ;
+            margin-bottom: 5%;
         }
     }
